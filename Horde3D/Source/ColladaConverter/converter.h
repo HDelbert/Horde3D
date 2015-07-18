@@ -97,7 +97,7 @@ struct Mesh : public SceneNode
 		lodLevel = 0;
 	}
 
-	~Mesh() { for( int i = triGroups.size(); i>0; ) delete triGroups[--i];  }
+	~Mesh() { for( uint i = triGroups.size(); i>0; ) delete triGroups[--i];  }
 
 };
 
